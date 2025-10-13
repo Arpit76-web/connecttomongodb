@@ -2,12 +2,15 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const connectDB = require('./db');
+const users = require('./routes/users');
 
 // Connect to the database
 connectDB();
 
 //body parser middleware
 app.use(express.json());
+
+app.use('/api', users);
   
 
 app.get('/', (req, res) => {

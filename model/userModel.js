@@ -4,11 +4,11 @@ const userSchema = new Schema({
     name: {
         type: String,
         required: true,
-        
+        maxlength: 50
     },
     age: {
         type: Number,
-        required: true,
+        required: true,   
     },
     weight: {
         type: Number,
