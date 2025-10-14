@@ -12,7 +12,7 @@ router.get("/users", async(req,res)=>{
     }
     catch(err){
         res.status(500).json({
-            success: false,
+            success: false ,
             message: err.message
         })
     }

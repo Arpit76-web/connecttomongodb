@@ -12,6 +12,7 @@ const userSchema = new Schema({
     },
     weight: {
         type: Number,
+        required: true,
     },
     createdAt:{
         type: Date,

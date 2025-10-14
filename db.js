@@ -9,7 +9,7 @@ const connectDB = async () => {
         const conn = await mongoose.connect(process.env.MONGODB_URI, {
             useNewUrlParser: true,
         });
-        console.log(`MongoDB Connected`);
+        console.log(`MongoDB will be connected and your backend will sarted`);
     } catch (err) {
         console.error(err.message);
         process.exit(1);
