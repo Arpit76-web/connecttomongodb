@@ -9,7 +9,7 @@ const connectDB = async () => {
         const conn = await mongoose.connect(process.env.MONGODB_URI, {
             useNewUrlParser: true,
         });
-        console.log(`MongoDB will be connected with you computer`);
+        console.log(`MongoDB is connected`);
     } catch (err) {
         console.error(err.message);
         process.exit(1);
