@@ -14,7 +14,7 @@ app.use('/api', users);
   
 
 app.get('/', (req, res) => {
-  res.send('Hello World!, this is my first Express app.');
+  res.send('Hello World!, this is my first Express app.and from today i will start to learn backend development');
 });
 
 app.listen(port, () => {
